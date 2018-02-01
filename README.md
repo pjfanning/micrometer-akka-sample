@@ -11,7 +11,7 @@ This sample is based on https://github.com/pjfanning/prometheus-akka-sample
 
 All you need to do is add a dependency on the micrometer-akka jar, add some configuration to your [application.conf](https://github.com/pjfanning/micrometer-akka-sample/blob/master/src/main/resources/application.conf) and to enable aspectjweaver.
 
-This sample uses `micrometer-prometheus-registry` to have the metrics registered as Prometheus client metrics.
+This sample uses `micrometer-registry-prometheus` to have the metrics registered as Prometheus client metrics.
 This is setup in [Main.scala](https://github.com/pjfanning/micrometer-akka-sample/blob/master/src/main/scala/com/example/akka/Main.scala).
 
 ```sbt clean run```
