@@ -1,6 +1,6 @@
 name := "micrometer-akka-sample"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.5"
 
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
