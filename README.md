@@ -1,7 +1,7 @@
 # micrometer-akka-sample
 
 This sample demonstrates how to add *Micrometer-Akka* metrics to your application.
-Micrometer-Akka is in experimental mode and is based on [Prometheus-Akka](https://github.com/Workday/prometheus-akka) - and still has the same application.conf setting.
+Micrometer-Akka is in experimental mode and is based on [Prometheus-Akka](https://github.com/Workday/prometheus-akka) - and has a similar application.conf setting (replacing `prometheus.akka` with `micrometer.akka`.
 
 The experimental code for Micrometer-Akka is in a [branch](https://github.com/pjfanning/prometheus-akka/tree/micrometer-akka) of Prometheus-Akka.
 
