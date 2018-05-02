@@ -1,7 +1,7 @@
 # micrometer-akka-sample
 
 This sample demonstrates how to add *Micrometer-Akka* metrics to your application.
-Micrometer-Akka is in experimental mode and is based on [Prometheus-Akka](https://github.com/Workday/prometheus-akka) - and still has the same package names and application.conf setting.
+Micrometer-Akka is in experimental mode and is based on [Prometheus-Akka](https://github.com/Workday/prometheus-akka) - and still has the same application.conf setting.
 
 The experimental code for Micrometer-Akka is in a [branch](https://github.com/pjfanning/prometheus-akka/tree/micrometer-akka) of Prometheus-Akka.
 
@@ -23,7 +23,7 @@ This plugin basically adds this to the java runtime command.
 
 ```-javaagent:/path/to/aspectjweaver-1.9.1.jar```
 
-If you want to use prometheus-akka with your own application, ensure that you startup script adds something like this:
+If you want to use micrometer-akka with your own application, ensure that you startup script adds something like this:
 
 ```bash
 JAVA_AGENT="-javaagent:$BASE/lib/aspectjweaver-1.9.1.jar"

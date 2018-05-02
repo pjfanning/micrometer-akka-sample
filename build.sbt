@@ -1,6 +1,6 @@
 name := "micrometer-akka-sample"
 
-scalaVersion := "2.12.5"
+scalaVersion := "2.12.6"
 
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
@@ -13,7 +13,7 @@ enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.1" % "runtime"
 
 libraryDependencies ++= Seq(
-  "com.workday" %% "micrometer-akka" % "0.8.5-SNAPSHOT" changing(),
+  "io.kontainers" %% "micrometer-akka" % "0.9.0-SNAPSHOT" changing(),
   "io.micrometer" % "micrometer-registry-prometheus" % micrometerVersion,
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
