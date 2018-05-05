@@ -13,7 +13,7 @@ enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.1" % "runtime"
 
 libraryDependencies ++= Seq(
-  "io.kontainers" %% "micrometer-akka" % "0.9.0-SNAPSHOT" changing(),
+  "io.kontainers" %% "micrometer-akka" % "0.9.0",
   "io.micrometer" % "micrometer-registry-prometheus" % micrometerVersion,
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
