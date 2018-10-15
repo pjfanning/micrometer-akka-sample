@@ -7,7 +7,7 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 val akkaVersion = "2.5.17"
 val akkaHttpVersion = "10.1.5"
-val micrometerVersion = "1.0.6"
+val micrometerVersion = "1.0.7"
 val prometheusVersion = "0.5.0"
 
 enablePlugins(JavaAgent)
