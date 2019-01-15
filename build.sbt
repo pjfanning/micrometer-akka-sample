@@ -6,7 +6,7 @@ resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 val akkaVersion = "2.5.19"
-val akkaHttpVersion = "10.1.6"
+val akkaHttpVersion = "10.1.7"
 val micrometerVersion = "1.1.1"
 val prometheusVersion = "0.6.0"
 
