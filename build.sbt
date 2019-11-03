@@ -6,9 +6,9 @@ resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 val akkaVersion = "2.5.26"
-val akkaHttpVersion = "10.1.9"
+val akkaHttpVersion = "10.1.10"
 val micrometerVersion = "1.3.0"
-val prometheusVersion = "0.6.0"
+val prometheusVersion = "0.7.0"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.4" % "runtime"
