@@ -4,8 +4,8 @@ scalaVersion := "2.13.2"
 
 val akkaVersion = "2.6.4"
 val akkaHttpVersion = "10.1.11"
-val micrometerVersion = "1.3.6"
-val prometheusVersion = "0.7.0"
+val micrometerVersion = "1.5.0"
+val prometheusVersion = "0.8.1"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.5" % "runtime"
