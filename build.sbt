@@ -2,10 +2,10 @@ name := "micrometer-akka-sample"
 
 scalaVersion := "2.13.2"
 
-val akkaVersion = "2.6.5"
-val akkaHttpVersion = "10.1.11"
-val micrometerVersion = "1.5.0"
-val prometheusVersion = "0.8.1"
+val akkaVersion = "2.6.6"
+val akkaHttpVersion = "10.1.12"
+val micrometerVersion = "1.5.1"
+val prometheusVersion = "0.9.0"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.5" % "runtime"
