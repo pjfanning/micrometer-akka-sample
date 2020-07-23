@@ -8,7 +8,7 @@ val micrometerVersion = "1.5.2"
 val prometheusVersion = "0.9.0"
 
 enablePlugins(JavaAgent)
-javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.5" % "runtime"
+javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.6" % "runtime"
 
 libraryDependencies ++= Seq(
   "io.kontainers" %% "micrometer-akka" % "0.12.0",
