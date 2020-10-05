@@ -3,7 +3,7 @@ name := "micrometer-akka-sample"
 scalaVersion := "2.13.3"
 
 val akkaVersion = "2.6.9"
-val akkaHttpVersion = "10.2.0"
+val akkaHttpVersion = "10.2.1"
 val micrometerVersion = "1.5.5"
 val prometheusVersion = "0.9.0"
 
