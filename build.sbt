@@ -22,3 +22,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
+
+//uncomment this add-opens -- needed for Java 16 runtime -- will cause issues if used with Java 8 runtime
+//run / javaOptions ++= Seq("--add-opens", "java.base/java.lang=ALL-UNNAMED")
