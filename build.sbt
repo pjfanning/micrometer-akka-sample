@@ -4,7 +4,7 @@ scalaVersion := "2.13.5"
 
 val akkaVersion = "2.6.14"
 val akkaHttpVersion = "10.2.4"
-val micrometerVersion = "1.6.5"
+val micrometerVersion = "1.7.0"
 val prometheusVersion = "0.10.0"
 
 enablePlugins(JavaAgent)
