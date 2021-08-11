@@ -4,14 +4,14 @@ scalaVersion := "2.13.6"
 
 val akkaVersion = "2.6.15"
 val akkaHttpVersion = "10.2.6"
-val micrometerVersion = "1.7.2"
+val micrometerVersion = "1.7.3"
 val prometheusVersion = "0.11.0"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.7" % "runtime"
 
 libraryDependencies ++= Seq(
-  "io.kontainers" %% "micrometer-akka" % "0.12.2",
+  "io.kontainers" %% "micrometer-akka" % "0.12.3",
   "io.micrometer" % "micrometer-registry-prometheus" % micrometerVersion,
   "io.prometheus" % "simpleclient" % prometheusVersion,
   "io.prometheus" % "simpleclient_common" % prometheusVersion,
