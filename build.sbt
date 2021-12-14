@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
-  "ch.qos.logback" % "logback-classic" % "1.2.7"
+  "ch.qos.logback" % "logback-classic" % "1.2.8"
 )
 
 //uncomment this add-opens -- needed for Java 16 runtime -- will cause issues if used with Java 8 runtime
