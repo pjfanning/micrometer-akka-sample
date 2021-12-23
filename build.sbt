@@ -23,5 +23,5 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "1.2.10"
 )
 
-//uncomment this add-opens -- needed for Java 16 runtime -- will cause issues if used with Java 8 runtime
+//uncomment this add-opens -- needed for Java 16 and above runtimes -- will cause issues if used with Java 8 runtime
 //run / javaOptions ++= Seq("--add-opens", "java.base/java.lang=ALL-UNNAMED")
