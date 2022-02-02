@@ -7,11 +7,13 @@ val akkaHttpVersion = "10.2.7"
 val micrometerVersion = "1.8.2"
 val prometheusVersion = "0.12.0"
 
+ThisBuild / resolvers += Resolver.sonatypeRepo("snapshots")
+
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.7" % "runtime"
 
 libraryDependencies ++= Seq(
-  "io.kontainers" %% "micrometer-akka" % "0.12.3",
+  "com.github.pjfanning" %% "micrometer-akka" % "0.13.0-SNAPSHOT",
   "io.micrometer" % "micrometer-registry-prometheus" % micrometerVersion,
   "io.prometheus" % "simpleclient" % prometheusVersion,
   "io.prometheus" % "simpleclient_common" % prometheusVersion,

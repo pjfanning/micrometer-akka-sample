@@ -6,7 +6,7 @@
     </appender>
 
     <logger name="akka.monitor.instrumentation" level="DEBUG"/>
-    <logger name="io.kontainers.micrometer" level="DEBUG"/>
+    <logger name="com.github.pjfanning.micrometer" level="DEBUG"/>
 
     <root>
         <appender-ref ref="STDOUT"/>
