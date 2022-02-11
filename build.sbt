@@ -10,7 +10,7 @@ val prometheusVersion = "0.12.0"
 ThisBuild / resolvers += Resolver.sonatypeRepo("snapshots")
 
 enablePlugins(JavaAgent)
-javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.7" % "runtime"
+javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.8" % "runtime"
 
 libraryDependencies ++= Seq(
   "com.github.pjfanning" %% "micrometer-akka" % "0.13.0-SNAPSHOT",
