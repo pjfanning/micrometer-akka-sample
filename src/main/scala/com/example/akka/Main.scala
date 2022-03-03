@@ -6,8 +6,12 @@ import io.micrometer.core.instrument.Clock
 import io.micrometer.prometheus.{PrometheusConfig, PrometheusMeterRegistry}
 import io.prometheus.client.CollectorRegistry
 
+import scala.concurrent.Await
+import scala.concurrent.duration.Duration
+
 object Main extends App {
   val prometheusMeterRegistry = new PrometheusMeterRegistry(PrometheusConfig.DEFAULT, CollectorRegistry.defaultRegistry, Clock.SYSTEM)
   AkkaMetricRegistry.setRegistry(prometheusMeterRegistry)
-  WebServer.start()
+
+  Await.ready(WebServer.start(), Duration.Inf)
 }

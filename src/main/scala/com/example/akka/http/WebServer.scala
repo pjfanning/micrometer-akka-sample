@@ -1,10 +1,21 @@
 package com.example.akka.http
 
-import scala.concurrent.ExecutionContext.Implicits.global
-import akka.http.scaladsl.server.HttpApp
+import akka.actor.ActorSystem
+import akka.http.scaladsl.Http
 
-object WebServer extends HttpApp {
-  override def routes = PrometheusService.route
+import scala.concurrent.{ExecutionContextExecutor, Future}
 
-  def start(): Unit = startServer("0.0.0.0", 12345)
+object WebServer {
+
+  def start(): Future[Nothing] = {
+    implicit val system: ActorSystem = ActorSystem("akka-http-sample")
+    sys.addShutdownHook(system.terminate())
+
+    implicit val executionContext: ExecutionContextExecutor = system.dispatcher
+
+    for {
+      bindingFuture <- Http().newServerAt("0.0.0.0", 12345).bind(PrometheusService.route)
+      waitOnFuture  <- Future.never
+    } yield waitOnFuture
+  }
 }
