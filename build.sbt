@@ -13,7 +13,7 @@ enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.8" % "runtime"
 
 libraryDependencies ++= Seq(
-  "com.github.pjfanning" %% "micrometer-akka" % "0.13.2",
+  "com.github.pjfanning" %% "micrometer-akka" % "0.13.3",
   "io.micrometer" % "micrometer-registry-prometheus" % micrometerVersion,
   "io.prometheus" % "simpleclient" % prometheusVersion,
   "io.prometheus" % "simpleclient_common" % prometheusVersion,
