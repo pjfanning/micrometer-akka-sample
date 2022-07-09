@@ -5,7 +5,7 @@ scalaVersion := "2.13.8"
 val akkaVersion = "2.6.19"
 val akkaHttpVersion = "10.2.9"
 val aspectJVersion = "1.9.9.1"
-val micrometerVersion = "1.9.0"
+val micrometerVersion = "1.9.1"
 val prometheusVersion = "0.15.0"
 
 ThisBuild / resolvers += Resolver.sonatypeRepo("snapshots")
