@@ -3,12 +3,12 @@ name := "micrometer-akka-sample"
 scalaVersion := "2.13.8"
 
 val akkaVersion = "2.6.19"
-val akkaHttpVersion = "10.2.9"
+val akkaHttpVersion = "10.2.10"
 val aspectJVersion = "1.9.9.1"
 val micrometerVersion = "1.9.1"
 val prometheusVersion = "0.16.0"
 
-ThisBuild / resolvers += Resolver.sonatypeRepo("snapshots")
+ThisBuild / resolvers ++= Resolver.sonatypeOssRepos("snapshots")
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % aspectJVersion  % "runtime"
