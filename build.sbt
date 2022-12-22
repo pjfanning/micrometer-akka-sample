@@ -4,7 +4,7 @@ scalaVersion := "2.13.10"
 
 val akkaVersion = "2.6.20"
 val akkaHttpVersion = "10.2.10"
-val aspectJVersion = "1.9.9.1"
+val aspectJVersion = "1.9.19"
 val micrometerVersion = "1.10.2"
 val prometheusVersion = "0.16.0"
 
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
-  "ch.qos.logback" % "logback-classic" % "1.3.4"
+  "ch.qos.logback" % "logback-classic" % "1.3.5"
 )
 
 //uncomment this add-opens -- needed for Java 16 and above runtimes -- will cause issues if used with Java 8 runtime
