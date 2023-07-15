@@ -1,11 +1,11 @@
 name := "micrometer-akka-sample"
 
-scalaVersion := "2.13.10"
+scalaVersion := "2.13.11"
 
-val akkaVersion = "2.6.20"
+val akkaVersion = "2.6.21"
 val akkaHttpVersion = "10.2.10"
 val aspectJVersion = "1.9.19"
-val micrometerVersion = "1.11.0"
+val micrometerVersion = "1.11.2"
 val prometheusVersion = "0.16.0"
 
 ThisBuild / resolvers ++= Resolver.sonatypeOssRepos("snapshots")
